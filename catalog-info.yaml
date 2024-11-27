@@ -1,27 +1,27 @@
-#apiVersion: backstage.io/v1alpha1
-#kind: Component
-#metadata:
-#  name: my-spring-boot-app
-#  description: A simple Spring Boot application
-#  tags:
-#    - springboot
-#
-#spec:
-#  type: service
-#  lifecycle: production
-#  owner: team-xyz
-#  repo: https://github.com/Harpreet386/spring-boot-api
-
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: Component
 metadata:
-  name: my-api
-  description: A simple API that greets users
+  name: my-spring-boot-app
+  description: A simple Spring Boot application
   tags:
-    - example
+    - springboot
+
 spec:
-  type: openapi
+  type: service
   lifecycle: production
   owner: team-xyz
-  definition:
-    url: https://github.com/Harpreet386/spring-boot-api/blob/main/openapi.yaml
+  repo: https://github.com/Harpreet386/spring-boot-api
+
+#APIVERSION: BACKSTAGE.IO/V1ALPHA1
+#KIND: API
+#METADATA:
+#  NAME: MY-API
+#  DESCRIPTION: A SIMPLE API THAT GREETS USERS
+#  TAGS:
+#    - EXAMPLE
+#SPEC:
+#  TYPE: OPENAPI
+#  LIFECYCLE: PRODUCTION
+#  OWNER: TEAM-XYZ
+#  DEFINITION:
+#    URL: HTTPS://GITHUB.COM/HARPREET386/SPRING-BOOT-API/BLOB/MAIN/OPENAPI.YAML
