@@ -24,4 +24,4 @@ spec:
   lifecycle: production
   owner: team-xyz
   definition:
-    url: https://github.com/yourusername/your-repo/blob/main/openapi.yaml
+    url: https://github.com/Harpreet386/spring-boot-api/blob/main/openapi.yaml
