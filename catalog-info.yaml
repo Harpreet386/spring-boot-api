@@ -1,19 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: spring-boot-example
-  description: A Spring Boot example service for managing users
-  tags:
-    - spring
-    - java
-    - backend
+  name: spring-boot-api
+  annotations:
+    github.com/project-slug: Harpreet386/spring-boot-api
 spec:
-  type: service
-  owner: team-a
-  lifecycle: production
-  system: your-system
-  implementsApis:
-    - api: http://example.com/my-api
-  links:
-    - url: https://github.com/Harpreet386/spring-boot-api
-      title: GitHub repository
+  type: other
+  lifecycle: unknown
+  owner: backstage
