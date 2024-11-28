@@ -1,20 +1,56 @@
-openapi: 3.0.0
-info:
-  title: My API
-  description: This is a sample API
-  version: 1.0.0
-paths:
-  /hello:
-    get:
-      summary: Returns a greeting
-      responses:
-        200:
-          description: A greeting message
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  message:
-                    type: string
-                    example: Hello, world!
+{
+"openapi"
+:
+"3.0.1",
+"info": {
+"title"
+:
+"Demo API",
+"description"
+:
+"This is a demo API documentation",
+"version"
+:
+"v1"
+},
+"servers": [
+{
+"url"
+:
+"http://localhost:8080",
+"description"
+:
+"Generated server url"
+}
+],
+"paths": {
+"/api/hello": {
+"get": {
+"tags": [
+"hello-world-controller"
+],
+"operationId"
+:
+"helloWorld",
+"responses": {
+"200": {
+"description"
+:
+"OK",
+"content": {
+"*/*": {
+"schema": {
+"type"
+:
+"string"
+}
+}
+}
+}
+}
+}
+}
+},
+"components": {
+}
+}
