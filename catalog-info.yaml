@@ -1,27 +1,15 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: my-spring-boot-app
-  description: A simple Spring Boot application
+  name: sample-spring-boot-app
+  title: sample-spring-boot-app
+  annotations:
+    github.com/project-slug: test/sample-spring-boot-app
   tags:
-    - springboot
-
+    - spring-boot
+    - java
+    - maven
 spec:
   type: service
-  lifecycle: production
-  owner: team-xyz
-  repo: https://github.com/Harpreet386/spring-boot-api
-
-#APIVERSION: BACKSTAGE.IO/V1ALPHA1
-#KIND: API
-#METADATA:
-#  NAME: MY-API
-#  DESCRIPTION: A SIMPLE API THAT GREETS USERS
-#  TAGS:
-#    - EXAMPLE
-#SPEC:
-#  TYPE: OPENAPI
-#  LIFECYCLE: PRODUCTION
-#  OWNER: TEAM-XYZ
-#  DEFINITION:
-#    URL: HTTPS://GITHUB.COM/HARPREET386/SPRING-BOOT-API/BLOB/MAIN/OPENAPI.YAML
+  owner: test123@gmail.com
+  lifecycle: experimental
