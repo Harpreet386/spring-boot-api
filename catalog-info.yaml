@@ -2,8 +2,14 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: spring-boot-api
+  title: spring-boot-api
   annotations:
     github.com/project-slug: Harpreet386/spring-boot-api
+  tags:
+    - spring-boot
+    - java
+    - maven
 spec:
-  type: other
-  lifecycle: unknown
+  type: service
+  owner: Harpreet386
+  lifecycle: experimental
