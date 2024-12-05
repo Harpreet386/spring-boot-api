@@ -1,15 +1,31 @@
+#apiVersion: backstage.io/v1alpha1
+#kind: Component
+#metadata:
+#  name: spring-boot-api
+#  title: spring-boot-api
+#  annotations:
+#    github.com/project-slug: Harpreet386/spring-boot-api
+#  tags:
+#    - spring-boot
+#    - java
+#    - maven
+#spec:
+#  type: service
+#  owner: Harpreet386
+#  lifecycle: experimental
+
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: spring-boot-api
-  title: spring-boot-api
-  annotations:
-    github.com/project-slug: Harpreet386/spring-boot-api
+  name: person-service
+  description: "Spring Boot Person API"
   tags:
     - spring-boot
-    - java
-    - maven
 spec:
   type: service
-  owner: Harpreet386
-  lifecycle: experimental
+  lifecycle: production
+  owner: team-xyz
+  system: person-system
+  links:
+    - url: https://github.com/Harpreet386/spring-boot-api
+      title: GitHub Repository

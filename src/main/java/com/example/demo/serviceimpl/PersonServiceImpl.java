@@ -3,9 +3,12 @@ package com.example.demo.serviceimpl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.example.demo.model.Person;
 import com.example.demo.service.PersonService;
 
+@Service
 public class PersonServiceImpl implements PersonService {
     private final List<Person> personList = new ArrayList<>();
 
