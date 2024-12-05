@@ -29,4 +29,4 @@ spec:
   api:
     - target: http://localhost:8080/api   # Link to your API endpoint
   annotations:
-    #backstage.io/openapi: "https://github.com/your-username/your-repo/blob/main/api/openapi.yaml"
+    backstage.io/openapi: "https://github.com/your-username/your-repo/blob/main/api/openapi.yaml"
