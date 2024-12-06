@@ -14,19 +14,49 @@
 #  owner: Harpreet386
 #  lifecycle: experimental
 
+#apiVersion: backstage.io/v1alpha1
+#kind: Component
+#metadata:
+#  name: person-service
+#  description: "Spring Boot Person API"
+#  tags:
+#    - spring-boot
+#spec:
+#  type: service
+#  lifecycle: production
+#  owner: team-xyz
+#  system: person-system
+#  api:
+#    - target: http://localhost:8080/api   # Link to your API endpoint
+#  annotations:
+#    backstage.io/openapi: https://github.com/Harpreet386/spring-boot-api/blob/master/api/openapi.yaml
+
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: person-service
-  description: "Spring Boot Person API"
-  tags:
-    - spring-boot
+  links:
+    - url: "https://github.com/Harpreet386/spring-boot-api"
+      title: "GitHub Repo"
 spec:
   type: service
-  lifecycle: production
-  owner: team-xyz
-  system: person-system
-  api:
-    - target: http://localhost:8080/api   # Link to your API endpoint
-  annotations:
-    backstage.io/openapi: https://github.com/Harpreet386/spring-boot-api/blob/master/api/openapi.yaml
+  lifecycle: experimental
+  owner: Harpreet386
+  system: examples
+  providesApis: [person-service-api]
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: person-service-api
+  description: Demo Project
+  links:
+    - url: "https://github.com/Harpreet386/spring-boot-api"
+      title: "GitHub Repo"
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: Harpreet386
+  system: examples
+  definition:
+    $text: "https://github.com/Harpreet386/spring-boot-api/blob/master/api/openapi.yaml"
